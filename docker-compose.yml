@@ -1,19 +1,19 @@
 services:
-  rmm_frontend:
+  geo_frontend:
     build: .  # 👈 Usa el Dockerfile local para construir la imagen
-    image: rmm_frontend-react-app  # 👈 Opcional, así la nombra localmente
-    container_name: rmm_frontend_container
+    image: geo_frontend-react-app  # 👈 Opcional, así la nombra localmente
+    container_name: geo_frontend_container
     restart: always
     expose:
       - "80"
     labels:
       - "traefik.enable=true"
       # 🚀 Regla para frontend
-      - "traefik.http.routers.revista_front.rule=Host(`revista.metaminingmedia.com`) && PathPrefix(`/`)"
-      - "traefik.http.routers.revista_front.entrypoints=web,websecure"
-      - "traefik.http.routers.revista_front.tls=true"
-      - "traefik.http.routers.revista_front.tls.certresolver=mytlschallenge"
-      - "traefik.http.services.revista_front.loadbalancer.server.port=80"
+      - "traefik.http.routers.geo_front.rule=Host(`geoperuvian.codeauni.com`) && PathPrefix(`/`)"
+      - "traefik.http.routers.geo_front.entrypoints=web,websecure"
+      - "traefik.http.routers.geo_front.tls=true"
+      - "traefik.http.routers.geo_front.tls.certresolver=mytlschallenge"
+      - "traefik.http.services.geo_front.loadbalancer.server.port=80"
     networks:
       - root_default
 

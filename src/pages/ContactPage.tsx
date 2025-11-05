@@ -13,7 +13,7 @@ import contactHeroImage from 'figma:asset/23394fba70da6842792a2597586a10abc65023
 import mapImage from 'figma:asset/1e89eb28fc71ab4eec16f4dd27b0e1e68f6ae02b.png';
 
 // URL base del API
-const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || '/api/v1/';
 
 // Mapeo de valores del select del frontend a los valores del backend
 const serviceMapping: Record<string, string> = {

@@ -10,7 +10,7 @@ interface BlogCardProps {
 }
 
 // URL base del API - debe coincidir con BlogsPage
-const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || '/api/v1/';
 
 export function BlogCard({ titulo, imagen, slug, fechaPublicacion }: BlogCardProps) {
   // Construir URL de la imagen completa

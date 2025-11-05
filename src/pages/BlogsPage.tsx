@@ -27,7 +27,7 @@ interface BlogsPageProps {
 
 // URL base del API - puedes cambiarla según tu configuración
 // Para producción, crea un archivo .env con VITE_API_BASE_URL=http://tu-backend-url
-const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || '/api/v1/';
 
 export function BlogsPage({ onNavigate }: BlogsPageProps) {
   const [blogs, setBlogs] = useState<Blog[]>([]);

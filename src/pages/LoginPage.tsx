@@ -11,7 +11,7 @@ interface LoginPageProps {
 }
 
 // URL base del API
-const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || '/api/v1/';
 
 export function LoginPage({ onNavigate }: LoginPageProps) {
   const [formData, setFormData] = useState({
