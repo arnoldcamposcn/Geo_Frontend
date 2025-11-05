@@ -179,7 +179,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.8, 0]);
 
   return (
-    <div className="min-h-screen bg-[#1C1C1C] pt-20">
+    <div className="min-h-screen bg-[#1C1C1C] pt-20 overflow-x-hidden w-full">
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
         <motion.div 
@@ -268,15 +268,16 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
       </section>
 
       {/* Contact Form & Info Section */}
-      <section id="contact-form" className="py-24 bg-[#1C1C1C]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
+      <section id="contact-form" className="py-24 bg-[#1C1C1C] overflow-x-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 w-full">
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
+              className="w-full"
             >
               <div className="mb-8">
                 <h2 className="font-['Saira_Semi_Condensed'] text-3xl text-white mb-4">Envíanos un Mensaje</h2>
@@ -285,11 +286,11 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                 </p>
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6 w-full">
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div>
+                  <div className="w-full">
                     <Label htmlFor="name">Nombre Completo *</Label>
-                    <div className="relative mt-2">
+                    <div className="relative mt-2 w-full">
                       <Input
                         id="name"
                         name="name"
@@ -298,7 +299,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                         onBlur={() => handleBlur('name')}
                         placeholder="Juan Pérez"
                         required
-                        className="pr-10"
+                        className="pr-10 w-full max-w-full"
                       />
                       <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
                         {renderFieldIcon('name')}
@@ -306,9 +307,9 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                     </div>
                   </div>
 
-                  <div>
+                  <div className="w-full">
                     <Label htmlFor="email">Correo Electrónico *</Label>
-                    <div className="relative mt-2">
+                    <div className="relative mt-2 w-full">
                       <Input
                         id="email"
                         name="email"
@@ -318,7 +319,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                         onBlur={() => handleBlur('email')}
                         placeholder="juan.perez@empresa.com"
                         required
-                        className="pr-10"
+                        className="pr-10 w-full max-w-full"
                       />
                       <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
                         {renderFieldIcon('email')}
@@ -328,9 +329,9 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div>
+                  <div className="w-full">
                     <Label htmlFor="company">Empresa *</Label>
-                    <div className="relative mt-2">
+                    <div className="relative mt-2 w-full">
                       <Input
                         id="company"
                         name="company"
@@ -339,7 +340,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                         onBlur={() => handleBlur('company')}
                         placeholder="Tu empresa minera"
                         required
-                        className="pr-10"
+                        className="pr-10 w-full max-w-full"
                       />
                       <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
                         {renderFieldIcon('company')}
@@ -347,9 +348,9 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                     </div>
                   </div>
 
-                  <div>
+                  <div className="w-full">
                     <Label htmlFor="phone">Número de Teléfono</Label>
-                    <div className="relative mt-2">
+                    <div className="relative mt-2 w-full">
                       <Input
                         id="phone"
                         name="phone"
@@ -358,7 +359,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                         onChange={handleChange}
                         onBlur={() => handleBlur('phone')}
                         placeholder="+51 999 999 999"
-                        className="pr-10"
+                        className="pr-10 w-full max-w-full"
                       />
                       <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
                         {renderFieldIcon('phone')}
@@ -367,11 +368,11 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                   </div>
                 </div>
 
-                <div>
+                <div className="w-full">
                   <Label htmlFor="service">Servicio de Interés *</Label>
-                  <div className="relative mt-2">
+                  <div className="relative mt-2 w-full">
                     <Select onValueChange={handleSelectChange} required>
-                      <SelectTrigger className={formData.service ? "pr-10" : ""}>
+                      <SelectTrigger className={formData.service ? "pr-10 w-full max-w-full" : "w-full max-w-full"}>
                         <SelectValue placeholder="Selecciona un servicio" />
                       </SelectTrigger>
                       <SelectContent>
@@ -392,9 +393,9 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                   </div>
                 </div>
 
-                <div>
+                <div className="w-full">
                   <Label htmlFor="message">Mensaje *</Label>
-                  <div className="relative mt-2">
+                  <div className="relative mt-2 w-full">
                     <Textarea
                       id="message"
                       name="message"
@@ -404,7 +405,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                       placeholder="Cuéntanos sobre tu proyecto, desafíos y objetivos..."
                       required
                       rows={6}
-                      className="pr-10"
+                      className="pr-10 w-full max-w-full"
                     />
                     <div className="absolute right-3 top-3 pointer-events-none">
                       {renderFieldIcon('message')}
@@ -432,17 +433,17 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
               </form>
 
               {/* Google Maps Location */}
-              <div className="mt-12">
+              <div className="mt-12 w-full">
                 <h3 className="font-['Saira_Semi_Condensed'] text-2xl text-white mb-4">Nuestra Ubicación</h3>
                 <p className="text-white/70 mb-6">
                   Encuéntranos en Santiago de Surco, Lima, Perú
                 </p>
-                <div className="rounded-lg overflow-hidden border border-white/10">
+                <div className="rounded-lg overflow-hidden border border-white/10 w-full max-w-full">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62460.89474995937!2d-77.01776468562012!3d-12.146461699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7f1b6a5f0a5%3A0x4d4f5c5d5c5c5c5c!2sSantiago%20de%20Surco%2C%20Lima%2C%20Peru!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
                     width="100%"
                     height="400"
-                    style={{ border: 0 }}
+                    style={{ border: 0, maxWidth: '100%' }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
@@ -458,6 +459,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.2 }}
+              className="w-full"
             >
               <div className="mb-8">
                 <h2 className="font-['Saira_Semi_Condensed'] text-3xl text-white mb-4">Ponte en Contacto</h2>
@@ -466,32 +468,32 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                 </p>
               </div>
 
-              <div className="space-y-6 mb-12">
-                <div className="bg-[#252525] border border-white/10 rounded-lg p-6 hover:border-[#C7482C]/50 transition-colors">
+              <div className="space-y-6 mb-12 w-full">
+                <div className="bg-[#252525] border border-white/10 rounded-lg p-4 sm:p-6 hover:border-[#C7482C]/50 transition-colors w-full max-w-full">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-[#C7482C]/20 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Mail className="text-[#C7482C]" size={20} />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h3 className="text-white mb-2">Email</h3>
                       <p className="text-white/70 mb-1">Consultas generales:</p>
-                      <a href="mailto:contacto.peru@geoperuviangroup.com" className="text-[#C7482C] hover:underline">
+                      <a href="mailto:contacto.peru@geoperuviangroup.com" className="text-[#C7482C] hover:underline break-all">
                         contacto.peru@geoperuviangroup.com
                       </a>
                       <p className="text-white/70 mt-3 mb-1">Soporte técnico:</p>
-                      <a href="mailto:soporte@geoperuviangroup.com" className="text-[#C7482C] hover:underline">
+                      <a href="mailto:soporte@geoperuviangroup.com" className="text-[#C7482C] hover:underline break-all">
                         soporte@geoperuviangroup.com
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-[#252525] border border-white/10 rounded-lg p-6 hover:border-[#C7482C]/50 transition-colors">
+                <div className="bg-[#252525] border border-white/10 rounded-lg p-4 sm:p-6 hover:border-[#C7482C]/50 transition-colors w-full max-w-full">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-[#C7482C]/20 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Phone className="text-[#C7482C]" size={20} />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h3 className="text-white mb-2">Teléfono</h3>
                       <p className="text-white/70 mb-1">Oficina Perú:</p>
                       <a href="tel:+51014891892" className="text-[#C7482C] hover:underline">
@@ -505,12 +507,12 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                   </div>
                 </div>
 
-                <div className="bg-[#252525] border border-white/10 rounded-lg p-6 hover:border-[#C7482C]/50 transition-colors">
+                <div className="bg-[#252525] border border-white/10 rounded-lg p-4 sm:p-6 hover:border-[#C7482C]/50 transition-colors w-full max-w-full">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-[#C7482C]/20 rounded-lg flex items-center justify-center flex-shrink-0">
                       <MapPin className="text-[#C7482C]" size={20} />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h3 className="text-white mb-2">Oficina</h3>
                       <p className="text-white/70">
                         Santiago de Surco<br />
@@ -521,12 +523,12 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                   </div>
                 </div>
 
-                <div className="bg-[#252525] border border-white/10 rounded-lg p-6 hover:border-[#C7482C]/50 transition-colors">
+                <div className="bg-[#252525] border border-white/10 rounded-lg p-4 sm:p-6 hover:border-[#C7482C]/50 transition-colors w-full max-w-full">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-[#C7482C]/20 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Clock className="text-[#C7482C]" size={20} />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h3 className="text-white mb-2">Horario de Atención</h3>
                       <p className="text-white/70">
                         Lunes - Viernes: 8:00 AM - 6:00 PM (PET)<br />
@@ -537,12 +539,12 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                   </div>
                 </div>
 
-                <div className="bg-[#252525] border border-white/10 rounded-lg p-6 hover:border-[#C7482C]/50 transition-colors">
+                <div className="bg-[#252525] border border-white/10 rounded-lg p-4 sm:p-6 hover:border-[#C7482C]/50 transition-colors w-full max-w-full">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-[#C7482C]/20 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Globe className="text-[#C7482C]" size={20} />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h3 className="text-white mb-2">Presencia Global</h3>
                       <p className="text-white/70">
                         Operando en 3 países de Latinoamérica con expertise local y estándares globales.
@@ -557,9 +559,9 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-[#252525]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto">
+      <section className="py-24 bg-[#252525] overflow-x-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="max-w-3xl mx-auto w-full">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

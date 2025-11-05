@@ -28,7 +28,8 @@ FROM nginx:alpine
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copia los archivos de producción compilados desde la etapa 'build'
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /app/build /usr/share/nginx/html
+
 
 # Exponer el puerto 80 del contenedor (mapeado al 5173 en el VPS por docker-compose)
 EXPOSE 80

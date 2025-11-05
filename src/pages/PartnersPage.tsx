@@ -100,9 +100,9 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
   ];
 
   return (
-    <div className="min-h-screen bg-[#1C1C1C] pt-20">
+    <div className="min-h-screen bg-[#1C1C1C] pt-20 overflow-x-hidden w-full">
       {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
+      <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden w-full">
         <motion.div 
           className="absolute inset-0 z-0"
           style={{ y }}
@@ -128,10 +128,10 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
           className="relative z-10 w-full py-32 mt-20 sm:mt-24 md:mt-28"
           style={{ opacity }}
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border">
+            <div className="max-w-4xl w-full">
               <motion.h1 
-                className="font-['Saira_Semi_Condensed'] text-5xl md:text-6xl lg:text-7xl text-white mb-8"
+                className="font-['Saira_Semi_Condensed'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-8"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -140,7 +140,7 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
               </motion.h1>
               
               <motion.p 
-                className="font-['Montserrat'] text-xl md:text-2xl text-white/90 mb-12 leading-relaxed"
+                className="font-['Montserrat'] text-lg sm:text-xl md:text-2xl text-white/90 mb-12 leading-relaxed break-words"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -184,19 +184,19 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-24 bg-[#252525]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-[#252525] overflow-x-hidden w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border">
           <motion.div 
-            className="max-w-3xl mx-auto text-center"
+            className="max-w-3xl mx-auto text-center w-full"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl text-white mb-6">
               Red de Colaboración Regional
             </h2>
-            <p className="text-lg text-white/70">
+            <p className="text-base sm:text-lg text-white/70 break-words">
               Establecemos alianzas estratégicas con compañías líderes a nivel regional para fomentar la innovación a través del intercambio de experiencias, conocimientos técnicos y mejores prácticas en la industria minera.
             </p>
           </motion.div>
@@ -204,15 +204,15 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
       </section>
 
       {/* Benefits */}
-      <section className="py-24 bg-[#1C1C1C]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <section className="py-24 bg-[#1C1C1C] overflow-x-hidden w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
                 <motion.div
                   key={index}
-                  className="bg-[#252525] border border-white/10 rounded-lg p-6 hover:border-[#C7482C]/50 transition-colors"
+                  className="bg-[#252525] border border-white/10 rounded-lg p-6 hover:border-[#C7482C]/50 transition-colors w-full max-w-full min-w-0"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
@@ -221,8 +221,8 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
                   <div className="w-14 h-14 bg-[#C7482C]/20 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="text-[#C7482C]" size={28} />
                   </div>
-                  <h3 className="text-xl text-white mb-3">{benefit.title}</h3>
-                  <p className="text-white/70">{benefit.description}</p>
+                  <h3 className="text-lg sm:text-xl text-white mb-3">{benefit.title}</h3>
+                  <p className="text-sm sm:text-base text-white/70 break-words">{benefit.description}</p>
                 </motion.div>
               );
             })}
@@ -231,34 +231,34 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
       </section>
 
       {/* Partners Detail */}
-      <section className="py-24 bg-[#252525]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-[#252525] overflow-x-hidden w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-16 w-full"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl text-white mb-4">Nuestros Socios</h2>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl text-white mb-4">Nuestros Socios</h2>
+            <p className="text-base sm:text-lg text-white/70 max-w-2xl mx-auto break-words">
               Presencia estratégica en tres países clave de Latinoamérica
             </p>
           </motion.div>
 
-          <div className="space-y-12">
+          <div className="space-y-12 w-full">
             {partners.map((partner, index) => (
               <motion.div
                 key={index}
-                className="bg-[#1C1C1C] border border-white/10 rounded-lg overflow-hidden hover:border-[#C7482C]/50 transition-colors"
+                className="bg-[#1C1C1C] border border-white/10 rounded-lg overflow-hidden hover:border-[#C7482C]/50 transition-colors w-full max-w-full"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
-                <div className="grid lg:grid-cols-2 gap-0">
+                <div className="grid lg:grid-cols-2 gap-0 w-full">
                   {/* Image */}
-                  <div className={`relative h-80 lg:h-auto ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                  <div className={`relative h-80 lg:h-auto w-full ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                     <ImageWithFallback
                       src={partner.image}
                       alt={`${partner.country} - ${partner.company}`}
@@ -299,35 +299,35 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
                           <span className="text-6xl">{partner.flag}</span>
                         )}
                       </span>
-                      <h3 className="text-3xl text-white">{partner.country}</h3>
+                      <h3 className="text-2xl sm:text-3xl text-white">{partner.country}</h3>
                     </div>
                   </div>
 
                   {/* Content */}
-                  <div className="p-8 lg:p-12">
+                  <div className="p-4 sm:p-6 lg:p-12 w-full min-w-0">
                     <div className="flex items-start gap-3 mb-4">
                       <Building2 className="text-[#C7482C] flex-shrink-0 mt-1" size={24} />
-                      <div>
-                        <h4 className="text-2xl text-white mb-1">{partner.company}</h4>
+                      <div className="min-w-0 flex-1">
+                        <h4 className="text-xl sm:text-2xl text-white mb-1 break-words">{partner.company}</h4>
                         {partner.subtitle && (
-                          <p className="text-white/60">{partner.subtitle}</p>
+                          <p className="text-sm sm:text-base text-white/60 break-words">{partner.subtitle}</p>
                         )}
                       </div>
                     </div>
 
-                    <p className="text-white/70 mb-8">{partner.description}</p>
+                    <p className="text-sm sm:text-base text-white/70 mb-6 sm:mb-8 break-words">{partner.description}</p>
 
-                    <div className="space-y-4 mb-8">
+                    <div className="space-y-4 mb-6 sm:mb-8">
                       <div className="flex items-start gap-3 text-white/70">
                         <MapPin className="text-[#C7482C] flex-shrink-0 mt-0.5" size={20} />
-                        <span>{partner.location}</span>
+                        <span className="text-sm sm:text-base break-words">{partner.location}</span>
                       </div>
 
                       <div className="flex items-start gap-3 text-white/70">
                         <Phone className="text-[#C7482C] flex-shrink-0 mt-0.5" size={20} />
-                        <div>
-                          <p>{partner.phone}</p>
-                          <p className="text-white/60 text-sm">{partner.mobile}</p>
+                        <div className="min-w-0 flex-1">
+                          <p className="text-sm sm:text-base break-words">{partner.phone}</p>
+                          <p className="text-white/60 text-xs sm:text-sm break-words">{partner.mobile}</p>
                         </div>
                       </div>
 
@@ -335,20 +335,20 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
                         <Mail className="text-[#C7482C] flex-shrink-0 mt-0.5" size={20} />
                         <a
                           href={`mailto:${partner.email}`}
-                          className="hover:text-[#C7482C] transition-colors"
+                          className="hover:text-[#C7482C] transition-colors text-sm sm:text-base break-all"
                         >
                           {partner.email}
                         </a>
                       </div>
                     </div>
 
-                    <div className="bg-[#252525] border border-white/10 rounded-lg p-6 mb-6">
-                      <h5 className="text-white mb-4">Servicios Especializados</h5>
-                      <div className="grid grid-cols-2 gap-3">
+                    <div className="bg-[#252525] border border-white/10 rounded-lg p-4 sm:p-6 mb-6 w-full">
+                      <h5 className="text-base sm:text-lg text-white mb-4">Servicios Especializados</h5>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         {partner.services.map((service, idx) => (
                           <div key={idx} className="flex items-start gap-2">
                             <div className="w-1.5 h-1.5 bg-[#C7482C] rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-sm text-white/70">{service}</span>
+                            <span className="text-xs sm:text-sm text-white/70 break-words">{service}</span>
                           </div>
                         ))}
                       </div>
@@ -369,18 +369,18 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-[#1C1C1C]">
+      <section className="py-24 bg-[#1C1C1C] overflow-x-hidden w-full">
         <motion.div 
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full box-border"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-white mb-6">
             ¿Interesado en Colaborar?
           </h2>
-          <p className="text-lg text-white/70 mb-8 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-white/70 mb-8 max-w-2xl mx-auto break-words">
             Estamos abiertos a nuevas alianzas estratégicas que fortalezcan nuestra red y amplíen nuestras capacidades.
           </p>
           <Button size="lg" className="group" asChild>

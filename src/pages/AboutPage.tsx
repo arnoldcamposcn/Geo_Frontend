@@ -393,9 +393,9 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-[#1C1C1C] pt-20">
+    <div className="min-h-screen bg-[#1C1C1C] pt-20 overflow-x-hidden w-full">
       {/* Hero Section - Quienes Somos */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
+      <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden w-full">
         <motion.div 
           className="absolute inset-0 z-0"
           style={{ y }}
@@ -421,8 +421,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           className="relative z-10 w-full py-32 mt-20 sm:mt-24 md:mt-28"
           style={{ opacity }}
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border">
+            <div className="max-w-4xl w-full">
               <motion.h1 
                 className="font-['Saira_Semi_Condensed'] text-5xl md:text-6xl lg:text-7xl text-white mb-8"
                 initial={{ opacity: 0, y: 30 }}
@@ -477,31 +477,31 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Diferenciadores Section */}
-      <section className="py-20 bg-[#252525]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-[#252525] overflow-x-hidden w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border">
           <motion.div 
-            className="text-center max-w-4xl mx-auto mb-12"
+            className="text-center max-w-4xl mx-auto mb-12 w-full"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-lg text-white/80 mb-8 break-words">
               Deseamos comprender profundamente las fortalezas, desafíos y restricciones de nuestros clientes para diseñar estrategias de mejora e innovación que sean efectivas y al servicio de sus metas.
             </p>
-            <p className="text-xl text-white">
+            <p className="text-xl text-white break-words">
               En <span className="text-[#C7482C]">GEOPERUVIAN</span> vamos más allá de la consultoría tradicional.{' '}
               <span className="text-white">Somos socios tecnológicos para la minería moderna, combinando:</span>
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 w-full">
             {differentiators.map((item, index) => {
               const Icon = item.icon;
               return (
                 <motion.div
                   key={index}
-                  className="bg-[#1C1C1C] border border-white/10 rounded-lg p-8 hover:border-[#C7482C]/50 transition-all hover:transform hover:scale-105"
+                  className="bg-[#1C1C1C] border border-white/10 rounded-lg p-8 hover:border-[#C7482C]/50 transition-all hover:transform hover:scale-105 w-full max-w-full min-w-0"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
@@ -520,8 +520,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-[#1C1C1C]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-[#1C1C1C] overflow-x-hidden w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border">
           <motion.div 
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -536,11 +536,11 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
             {teamMembers.map((member, index) => (
               <motion.div
                 key={member.id}
-                className="group relative bg-gradient-to-br from-[#252525] to-[#1C1C1C] border border-white/10 rounded-xl overflow-hidden hover:border-[#C7482C]/70 transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-xl hover:shadow-[#C7482C]/20 flex flex-col"
+                className="group relative bg-gradient-to-br from-[#252525] to-[#1C1C1C] border border-white/10 rounded-xl overflow-hidden hover:border-[#C7482C]/70 transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-xl hover:shadow-[#C7482C]/20 flex flex-col w-full max-w-full min-w-0"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
@@ -605,10 +605,10 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                   <div className="pt-3 border-t border-white/5">
                     <a
                       href={`mailto:${member.email}`}
-                      className="text-white/60 hover:text-[#C7482C] transition-colors text-xs inline-flex items-center gap-2 group/email"
+                      className="text-white/60 hover:text-[#C7482C] transition-colors text-xs inline-flex items-center gap-2 group/email break-all"
                     >
-                      <Mail size={12} className="text-[#C7482C]" />
-                      <span className="group-hover/email:translate-x-1 transition-transform duration-300">
+                      <Mail size={12} className="text-[#C7482C] flex-shrink-0" />
+                      <span className="group-hover/email:translate-x-1 transition-transform duration-300 break-all">
                         {member.email}
                       </span>
                     </a>
@@ -621,12 +621,12 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Vision & Mission Section */}
-      <section className="py-20 bg-[#252525]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
+      <section className="py-20 bg-[#252525] overflow-x-hidden w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border">
+          <div className="grid lg:grid-cols-2 gap-12 w-full">
             {/* Vision */}
             <motion.div 
-              className="bg-[#1C1C1C] border border-white/10 rounded-lg p-10 hover:border-[#C7482C]/50 transition-colors"
+              className="bg-[#1C1C1C] border border-white/10 rounded-lg p-10 hover:border-[#C7482C]/50 transition-colors w-full max-w-full min-w-0"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -663,7 +663,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
 
             {/* Mission */}
             <motion.div 
-              className="bg-[#1C1C1C] border border-white/10 rounded-lg p-10 hover:border-[#C7482C]/50 transition-colors"
+              className="bg-[#1C1C1C] border border-white/10 rounded-lg p-10 hover:border-[#C7482C]/50 transition-colors w-full max-w-full min-w-0"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -702,28 +702,28 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Lo Que Ofrecemos Section */}
-      <section className="py-20 bg-[#1C1C1C]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-[#1C1C1C] overflow-x-hidden w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-16 w-full"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-5xl text-white mb-6 font-[Saira_SemiCondensed]">Lo Que Ofrecemos</h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="text-xl text-white/80 max-w-3xl mx-auto break-words">
               Soluciones con Impacto Real en Minería, transformamos sus desafíos en resultados cuantificables mediante:
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
             {offerings.map((offering, index) => {
               const Icon = offering.icon;
               return (
                 <motion.div
                   key={index}
-                  className="bg-[#252525] border border-white/10 rounded-lg p-8 hover:border-[#C7482C]/50 transition-all hover:transform hover:scale-105"
+                  className="bg-[#252525] border border-white/10 rounded-lg p-8 hover:border-[#C7482C]/50 transition-all hover:transform hover:scale-105 w-full max-w-full min-w-0"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
@@ -749,9 +749,9 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-[#252525]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
+      <section className="py-20 bg-[#252525] overflow-x-hidden w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border">
+          <div className="max-w-4xl mx-auto w-full">
             <motion.h2 
               className="text-4xl text-white mb-12 text-center font-[Saira_SemiCondensed]"
               initial={{ opacity: 0, y: 30 }}
@@ -761,11 +761,11 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             >
               Beneficios
             </motion.h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 w-full">
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={index}
-                  className="bg-[#1C1C1C] border border-white/10 rounded-lg p-6 hover:border-[#C7482C]/50 transition-colors flex items-start gap-4"
+                  className="bg-[#1C1C1C] border border-white/10 rounded-lg p-6 hover:border-[#C7482C]/50 transition-colors flex items-start gap-4 w-full max-w-full min-w-0"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
@@ -781,7 +781,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* CTA Brochure Section */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-24 overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <ImageWithFallback
             src={brochureBackgroundImage}
@@ -793,14 +793,14 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
         </div>
 
         <motion.div 
-          className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+          className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full box-border"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl text-white mb-6 font-[Saira_SemiCondensed]">Brochure</h2>
-          <p className="text-xl text-white/95 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-white/95 mb-8 max-w-3xl mx-auto break-words">
             Conoce nuestras soluciones especializadas para el sector minero. Descarga nuestro brochure de servicios y descubre cómo podemos optimizar tus operaciones con tecnología de punta y asesoría experta.
           </p>
           <Button
@@ -818,9 +818,9 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-[#1C1C1C]">
+      <section className="py-20 bg-[#1C1C1C] overflow-x-hidden w-full">
         <motion.div 
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full box-border"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -829,7 +829,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           <h2 className="text-3xl md:text-4xl text-white mb-6 font-[Saira_SemiCondensed]">
             ¿Listo para Transformar tus Operaciones Mineras?
           </h2>
-          <p className="text-lg text-white/70 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-white/70 mb-8 max-w-2xl mx-auto break-words">
             Descubre cómo nuestro enfoque orientado a resultados puede ayudarte a alcanzar tus objetivos de eficiencia, sostenibilidad y rentabilidad.
           </p>
           <Button
@@ -845,7 +845,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
 
       {/* Team Member Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="bg-[#252525] border-[#C7482C]/30 text-white max-w-2xl max-h-[80vh] overflow-y-auto">
+        <DialogContent className="bg-[#252525] border-[#C7482C]/30 text-white max-w-2xl max-h-[80vh] overflow-y-auto w-full max-w-full box-border">
           <DialogHeader>
             <DialogTitle className="text-2xl text-white font-['Saira_Semi_Condensed']">
               {selectedMember?.name}
@@ -854,7 +854,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               {selectedMember?.title} - {selectedMember?.specialty}
             </DialogDescription>
           </DialogHeader>
-          <div className="mt-4 text-white/80">
+          <div className="mt-4 text-white/80 break-words">
             {selectedMember?.fullDescription}
           </div>
         </DialogContent>

@@ -145,20 +145,21 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#1C1C1C]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12">
+    <section id="contact" className="py-24 bg-[#1C1C1C] overflow-x-hidden w-full">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full box-border">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 w-full">
           {/* Left Content */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={contactInfoVariants}
+            className="w-full min-w-0"
           >
             <h2 className="font-['Saira_Semi_Condensed'] text-4xl md:text-5xl text-white mb-6">
               Transformemos tus Operaciones Mineras
             </h2>
-            <p className="text-lg text-white/70 mb-8">
+            <p className="text-lg text-white/70 mb-8 break-words">
               ¿Listo para aprovechar el poder de la IA y la analítica de datos? Nuestro equipo de expertos está aquí para ayudarte a desbloquear nuevo valor de tus datos geológicos.
             </p>
 
@@ -172,7 +173,7 @@ export function Contact() {
                 return (
                   <motion.div
                     key={index}
-                    className="flex items-start gap-4"
+                    className="flex items-start gap-4 w-full min-w-0"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -185,9 +186,9 @@ export function Contact() {
                     >
                       <Icon className="text-[#C7482C]" size={20} />
                     </motion.div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h4 className="text-white mb-1">{item.title}</h4>
-                      <p className="text-white/60 whitespace-pre-line">{item.content}</p>
+                      <p className="text-white/60 whitespace-pre-line break-words break-all">{item.content}</p>
                     </div>
                   </motion.div>
                 );
@@ -197,16 +198,16 @@ export function Contact() {
 
           {/* Right Form */}
           <motion.div 
-            className="bg-[#252525] border border-white/10 rounded-lg p-8"
+            className="bg-[#252525] border border-white/10 rounded-lg p-4 sm:p-6 md:p-8 w-full max-w-full box-border min-w-0"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={formVariants}
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
+            <form onSubmit={handleSubmit} className="space-y-6 w-full">
+              <div className="w-full min-w-0">
                 <Label htmlFor="name">Nombre Completo</Label>
-                <div className="relative mt-2">
+                <div className="relative mt-2 w-full">
                   <Input
                     id="name"
                     name="name"
@@ -215,7 +216,7 @@ export function Contact() {
                     onBlur={() => handleBlur('name')}
                     placeholder="Juan Pérez"
                     required
-                    className="pr-10"
+                    className="pr-10 w-full max-w-full"
                   />
                   <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
                     {renderFieldIcon('name')}
@@ -223,9 +224,9 @@ export function Contact() {
                 </div>
               </div>
 
-              <div>
+              <div className="w-full min-w-0">
                 <Label htmlFor="email">Correo Electrónico</Label>
-                <div className="relative mt-2">
+                <div className="relative mt-2 w-full">
                   <Input
                     id="email"
                     name="email"
@@ -235,7 +236,7 @@ export function Contact() {
                     onBlur={() => handleBlur('email')}
                     placeholder="juan.perez@empresa.com"
                     required
-                    className="pr-10"
+                    className="pr-10 w-full max-w-full"
                   />
                   <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
                     {renderFieldIcon('email')}
@@ -243,9 +244,9 @@ export function Contact() {
                 </div>
               </div>
 
-              <div>
+              <div className="w-full min-w-0">
                 <Label htmlFor="company">Empresa</Label>
-                <div className="relative mt-2">
+                <div className="relative mt-2 w-full">
                   <Input
                     id="company"
                     name="company"
@@ -254,7 +255,7 @@ export function Contact() {
                     onBlur={() => handleBlur('company')}
                     placeholder="Tu empresa minera"
                     required
-                    className="pr-10"
+                    className="pr-10 w-full max-w-full"
                   />
                   <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
                     {renderFieldIcon('company')}
@@ -262,9 +263,9 @@ export function Contact() {
                 </div>
               </div>
 
-              <div>
+              <div className="w-full min-w-0">
                 <Label htmlFor="message">Mensaje</Label>
-                <div className="relative mt-2">
+                <div className="relative mt-2 w-full">
                   <Textarea
                     id="message"
                     name="message"
@@ -274,7 +275,7 @@ export function Contact() {
                     placeholder="Cuéntanos sobre tu proyecto y cómo podemos ayudarte..."
                     required
                     rows={5}
-                    className="pr-10"
+                    className="pr-10 w-full max-w-full resize-none"
                   />
                   <div className="absolute right-3 top-3 pointer-events-none">
                     {renderFieldIcon('message')}
