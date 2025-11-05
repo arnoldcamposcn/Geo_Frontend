@@ -47,7 +47,7 @@ export function BlogDetailPage({ slug, onNavigate }: BlogDetailPageProps) {
       setLoading(true);
       setError(null);
       
-      const response = await fetch(`${API_BASE_URL}/api/v1/blog/blogs/${blogSlug}/`);
+      const response = await fetch(`${API_BASE_URL}blog/blogs/${blogSlug}/`);
       
       if (!response.ok) {
         throw new Error(`Error al cargar el blog: ${response.status}`);

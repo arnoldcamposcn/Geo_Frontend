@@ -63,7 +63,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
         return;
       }
 
-      const response = await fetch(`${API_BASE_URL}/api/v1/blog/contacto/`, {
+      const response = await fetch(`${API_BASE_URL}blog/contacto/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

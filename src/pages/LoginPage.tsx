@@ -60,7 +60,7 @@ export function LoginPage({ onNavigate }: LoginPageProps) {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(`${API_BASE_URL}/api/v1/users/auth/login`, {
+      const response = await fetch(`${API_BASE_URL}users/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

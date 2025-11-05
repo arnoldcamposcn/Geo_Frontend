@@ -126,7 +126,7 @@ export function BlogAdminPage({ onNavigate }: BlogAdminPageProps) {
         params.append('search', debouncedSearch.trim());
       }
 
-      const response = await fetch(`${API_BASE_URL}/api/v1/blog/blogs/?${params.toString()}`, {
+      const response = await fetch(`${API_BASE_URL}blog/blogs/?${params.toString()}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Accept': 'application/json',
@@ -251,8 +251,8 @@ export function BlogAdminPage({ onNavigate }: BlogAdminPageProps) {
       }
 
       const url = selectedBlog
-        ? `${API_BASE_URL}/api/v1/blog/blogs/${selectedBlog.slug}/`
-        : `${API_BASE_URL}/api/v1/blog/blogs/`;
+        ? `${API_BASE_URL}blog/blogs/${selectedBlog.slug}/`
+        : `${API_BASE_URL}blog/blogs/`;
 
       const method = selectedBlog ? 'PATCH' : 'POST';
 
@@ -310,7 +310,7 @@ export function BlogAdminPage({ onNavigate }: BlogAdminPageProps) {
         return;
       }
 
-      const response = await fetch(`${API_BASE_URL}/api/v1/blog/blogs/${selectedBlog.slug}/`, {
+      const response = await fetch(`${API_BASE_URL}blog/blogs/${selectedBlog.slug}/`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,

@@ -70,7 +70,7 @@ export function BlogsPage({ onNavigate }: BlogsPageProps) {
         params.append('search', debouncedSearch.trim());
       }
       
-      const response = await fetch(`${API_BASE_URL}/api/v1/blog/blogs/?${params.toString()}`);
+      const response = await fetch(`${API_BASE_URL}blog/blogs/?${params.toString()}`);
       
       if (!response.ok) {
         throw new Error(`Error al cargar blogs: ${response.status}`);

@@ -7,13 +7,14 @@ services:
     expose:
       - "80"
     labels:
-      - "traefik.enable=true"
-      # 🚀 Regla para frontend
-      - "traefik.http.routers.geo_front.rule=Host(`geoperuvian.codeauni.com`) && PathPrefix(`/`)"
-      - "traefik.http.routers.geo_front.entrypoints=web,websecure"
-      - "traefik.http.routers.geo_front.tls=true"
-      - "traefik.http.routers.geo_front.tls.certresolver=mytlschallenge"
-      - "traefik.http.services.geo_front.loadbalancer.server.port=80"
+        - "traefik.enable=true"
+        - "traefik.http.routers.geo_front.rule=Host(`geoperuvian.codeauni.com`) && PathPrefix(`/`)"
+        - "traefik.http.routers.geo_front.priority=1"
+        - "traefik.http.routers.geo_front.entrypoints=web,websecure"
+        - "traefik.http.routers.geo_front.tls=true"
+        - "traefik.http.routers.geo_front.tls.certresolver=mytlschallenge"
+
+        - "traefik.http.services.geo_front.loadbalancer.server.port=80"
     networks:
       - root_default
 

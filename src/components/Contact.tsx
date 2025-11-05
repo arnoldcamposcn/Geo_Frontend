@@ -30,7 +30,7 @@ export function Contact() {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch(`${API_BASE_URL}/api/v1/blog/contacto-home/`, {
+      const response = await fetch(`${API_BASE_URL}blog/contacto-home/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
