@@ -42,8 +42,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
   const teamMembers = [
     {
       id: 'romulo',
-      name: 'Rómulo Salirrosas',
-      title: 'Consultor Principal',
+      name: 'Rómulo Salirrosas Pablo',
+      title: 'Consultor Principal, Geología Mina y Proyectos',
       specialty: 'Principal Geología y Proyectos Mina',
       email: 'rsalirrosas@geoperuviangroup.com',
       image: romuloImage,
@@ -51,16 +51,16 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       fullDescription: (
         <>
           <p className="mb-4">
-            Rómulo es un Ingeniero Geólogo con 32 años de experiencia en la industria minera, destacando por su liderazgo en la dirección de proyectos y equipos en empresas de nivel global como Newmont, Southern y Antamina. Posee un Máster en Project Management por la Universidad de Barcelona (EAE, OBS).
+          Rómulo es un Ingeniero Geólogo con 32 años de experiencia en la industria minera , destacando por su liderazgo en la dirección de proyectos y equipos en empresas de nivel global como Newmont, Southern y Antamina. Posee un Máster en Project Management por la Universidad de Barcelona (EAE, OBS).
           </p>
           <p className="mb-4">
-            Su experiencia se centra en la gestión de proyectos mineros, geología económica, modelamiento geológico, estimación de recursos, geoestadística aplicada y QA/QC de procesos. Ha trabajado extensamente en diversos tipos de yacimientos, incluyendo epitermales de oro de alta sulfuración, pórfidos de Cu-Mo y skarn polimetálicos.
+          Su experiencia se centra en la gestión de proyectos mineros, geología económica, modelamiento geológico, estimación de recursos, geoestadística aplicada y QA/QC de procesos. Ha trabajado extensamente en diversos tipos de yacimientos, incluyendo epitermales de oro de alta sulfuración, pórfidos de Cu-Mo y skarn polimetálicos.
           </p>
           <p className="mb-4">Como consultor, Rómulo aporta un profundo conocimiento en:</p>
           <ul className="space-y-2 mb-4">
             <li className="flex items-start gap-2">
               <span className="text-[#C7482C] mt-1">•</span>
-              <span><strong>Modelamiento y Estimación de Recursos:</strong> Liderazgo en modelamiento geológico y estimación de recursos, elaborando reportes bajo códigos JORC y NI 43-101.</span>
+              <span><strong>Modelamiento y Estimación de Recursos:</strong> Liderazgo en modelamiento geológico y estimación de recursos , elaborando reportes bajo códigos JORC y NI 43-101.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[#C7482C] mt-1">•</span>
@@ -80,8 +80,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
     },
     {
       id: 'juan',
-      name: 'Juan Lira Cacho',
-      title: 'Consultor Principal',
+      name: 'Juan Manuel Lira Cacho',
+      title: 'Consultor Principal, Procesos Metalúrgicos',
       specialty: 'Principal Procesos Metalúrgicos',
       email: 'jlira@geoperuviangroup.com',
       image: juanImage,
@@ -124,8 +124,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
     },
     {
       id: 'alfonso',
-      name: 'Alfonso de la Guarda',
-      title: 'Asesor Técnico Principal',
+      name: 'Alfonso de la Guarda Reyes',
+      title: 'Asesor Principal, Inteligencia Artificial',
       specialty: 'Inteligencia Artificial',
       email: 'contacto@geoperuviangroup.com',
       image: alfonsoImage,
@@ -146,8 +146,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
     },
     {
       id: 'jorge',
-      name: 'Jorge León',
-      title: 'Consultor Técnico Principal',
+      name: 'Jorge Leon Pimentel',
+      title: 'Consultor Principal, Exploraciones y Evaluación de Proyectos',
       specialty: 'Evaluación Proyectos Exploración Geología y Proyectos Mina',
       email: 'contacto@geoperuviangroup.com',
       image: jorgeLeonImage,
@@ -175,15 +175,15 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             </li>
           </ul>
           <p className="mb-4">
-            Ha ocupado roles de alta dirección como Sub-Gerente de Exploraciones Brownfields en Hochschild Mining, Gerente de Desarrollo de Negocios en Summa Gold Corporation y Phoenix Capital Investment, Geocientífico Senior de Exploración en BHP Billiton y Jefe de Geología en AQM Peru Copper (Proyecto Zafranal).
+            Ha ocupado roles de alta dirección como Sub-Gerente de Exploraciones Brownfields en Hochschild Mining , Gerente de Desarrollo de Negocios en Summa Gold Corporation y Phoenix Capital Investment , Geocientífico Senior de Exploración en BHP Billiton y Jefe de Geología en AQM Peru Copper (Proyecto Zafranal).
           </p>
         </>
       ),
     },
     {
       id: 'fernando',
-      name: 'Fernando Saez',
-      title: 'Consultor Técnico Principal',
+      name: 'Fernando Saez Rivera',
+      title: 'Consultor Principal, Geoestadística y Estimación',
       specialty: 'Geología Mina Geoestadística',
       email: 'contacto@geoperuviangroup.com',
       image: fernandoImage,
@@ -216,15 +216,15 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             </li>
           </ul>
           <p className="mb-4">
-            Ha ocupado posiciones estratégicas como Superintendente de Recursos Minerales en AngloAmerican Quellaveco, Consultor Principal en SRK Consulting y Geólogo Senior de Recursos en Yanacocha.
+            Ha ocupado posiciones estratégicas como Superintendente de Recursos Minerales en AngloAmerican Quellaveco , Consultor Principal en SRK Consulting y Geólogo Senior de Recursos en Yanacocha.
           </p>
         </>
       ),
     },
     {
       id: 'bill',
-      name: 'Bill Maquin',
-      title: 'Consultor Técnico Principal',
+      name: 'Bill Maquin Valladares',
+      title: 'Consultor Principal, Operaciones Mina y Nuevas Tecnologías',
       specialty: 'Operaciones Mina y Tecnología Procesos Metalúrgicos',
       email: 'contacto@geoperuviangroup.com',
       image: billImage,
@@ -245,7 +245,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[#C7482C] mt-1">•</span>
-              <span><strong>Desarrollo y Automatización:</strong> Creación de soluciones de software (web, escritorio y móvil) para la planificación y operaciones mineras, incluyendo la automatización de procesos en estimación de recursos.</span>
+              <span><strong>Desarrollo y Automatización:</strong> Creación de soluciones de software (web, escritorio y móvil) para la planificación y operaciones mineras , incluyendo la automatización de procesos en estimación de recursos.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[#C7482C] mt-1">•</span>
@@ -260,8 +260,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
     },
     {
       id: 'daniel',
-      name: 'Daniel Fernando Peña',
-      title: 'Consultor Técnico Senior',
+      name: 'Daniel Peña Guimas',
+      title: 'Consultor Senior, Geología y Geometalurgia',
       specialty: 'Geometalurgia',
       email: 'contacto@geoperuviangroup.com',
       image: danielImage,
@@ -282,8 +282,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
     },
     {
       id: 'hector',
-      name: 'Héctor Andrade',
-      title: 'Consultor Técnico Principal',
+      name: 'Hector Andrade',
+      title: 'Consultor Principal, Inteligencia Artificial',
       specialty: 'Inteligencia Artificial',
       email: 'contacto@geoperuviangroup.com',
       image: hectorImage,

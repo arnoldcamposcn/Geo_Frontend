@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import imgImageGeoPeruvian from "figma:asset/81236c71f496cbe1189a44f113b0135aef2618f4.png";
+import imgImageGeoPeruvian from "../assets/geoperuvian.png";
 
 interface HeaderProps {
   currentPage?: string;
