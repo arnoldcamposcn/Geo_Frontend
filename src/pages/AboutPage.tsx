@@ -42,7 +42,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
   const teamMembers = [
     {
       id: 'romulo',
-      name: 'Rómulo Salirrosas Pablo',
+      name: 'L. Rómulo Salirrosas Pablo',
       title: 'Consultor Principal, Geología Mina y Proyectos',
       specialty: 'Principal Geología y Proyectos Mina',
       email: 'rsalirrosas@geoperuviangroup.com',
