@@ -21,7 +21,7 @@ export function HomePage({ onNavigate }: HomePageProps = {}) {
   };
 
   return (
-    <div className="pt-20 sm:pt-24 md:pt-28">
+    <div className="min-h-screen bg-[#1C1C1C] pt-20 overflow-x-hidden w-full">
       <Hero onNavigate={handleNavigate} />
       <About onNavigate={handleNavigate} />
       <Services onNavigate={handleNavigate} />

@@ -51,7 +51,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       fullDescription: (
         <>
           <p className="mb-4">
-          Rómulo es un Ingeniero Geólogo con 32 años de experiencia en la industria minera , destacando por su liderazgo en la dirección de proyectos y equipos en empresas de nivel global como Newmont, Southern y Antamina. Posee un Máster en Project Management por la Universidad de Barcelona (EAE, OBS).
+          Rómulo es un Ingeniero Geólogo con 32 años de experiencia en la industria minera, destacando por su liderazgo en la dirección de proyectos y equipos en empresas de nivel global como Newmont, Southern y Antamina. Posee un Máster en Project Management por la Universidad de Barcelona (EAE, OBS).
           </p>
           <p className="mb-4">
           Su experiencia se centra en la gestión de proyectos mineros, geología económica, modelamiento geológico, estimación de recursos, geoestadística aplicada y QA/QC de procesos. Ha trabajado extensamente en diversos tipos de yacimientos, incluyendo epitermales de oro de alta sulfuración, pórfidos de Cu-Mo y skarn polimetálicos.
@@ -60,7 +60,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           <ul className="space-y-2 mb-4">
             <li className="flex items-start gap-2">
               <span className="text-[#C7482C] mt-1">•</span>
-              <span><strong>Modelamiento y Estimación de Recursos:</strong> Liderazgo en modelamiento geológico y estimación de recursos , elaborando reportes bajo códigos JORC y NI 43-101.</span>
+              <span><strong>Modelamiento y Estimación de Recursos:</strong> Liderazgo en modelamiento geológico y estimación de recursos, elaborando reportes bajo códigos JORC y NI 43-101.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[#C7482C] mt-1">•</span>
@@ -102,10 +102,10 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
     },
     {
       id: 'jose',
-      name: 'José Bassan',
-      title: 'Asesor Técnico Principal',
+      name: 'José Antonio Bassan',
+      title: 'Asesor Principal, Minería',
       specialty: 'Fellow QP',
-      email: 'contacto@geoperuviangroup.com',
+      email: 'jbassan@geoperuviangroup.com',
       image: joseImage,
       description: 'Geólogo con Máster en Economía de Minerales, Fellow del AusIMM y experto QP en reportes JORC y NI 43-101...',
       fullDescription: (
@@ -127,7 +127,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       name: 'Alfonso de la Guarda Reyes',
       title: 'Asesor Principal, Inteligencia Artificial',
       specialty: 'Inteligencia Artificial',
-      email: 'contacto@geoperuviangroup.com',
+      email: 'adelaguarda@geoperuviangroup.com',
       image: alfonsoImage,
       description: 'Old School Hacker desde 1983, experto en Arquitectura Tecnológica y programación de bajo nivel, apasionado de Python y Linux...',
       fullDescription: (
@@ -149,7 +149,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       name: 'Jorge Leon Pimentel',
       title: 'Consultor Principal, Exploraciones y Evaluación de Proyectos',
       specialty: 'Evaluación Proyectos Exploración Geología y Proyectos Mina',
-      email: 'contacto@geoperuviangroup.com',
+      email: 'jleon@geoperuviangroup.com',
       image: jorgeLeonImage,
       description: 'Ingeniero Geólogo con 23 años de experiencia en exploración y evaluación de proyectos, con M.Sc. y MBA...',
       fullDescription: (
@@ -175,7 +175,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             </li>
           </ul>
           <p className="mb-4">
-            Ha ocupado roles de alta dirección como Sub-Gerente de Exploraciones Brownfields en Hochschild Mining , Gerente de Desarrollo de Negocios en Summa Gold Corporation y Phoenix Capital Investment , Geocientífico Senior de Exploración en BHP Billiton y Jefe de Geología en AQM Peru Copper (Proyecto Zafranal).
+            Ha ocupado roles de alta dirección como Sub-Gerente de Exploraciones Brownfields en Hochschild Mining, Gerente de Desarrollo de Negocios en Summa Gold Corporation y Phoenix Capital Investment, Geocientífico Senior de Exploración en BHP Billiton y Jefe de Geología en AQM Peru Copper (Proyecto Zafranal).
           </p>
         </>
       ),
@@ -185,7 +185,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       name: 'Fernando Saez Rivera',
       title: 'Consultor Principal, Geoestadística y Estimación',
       specialty: 'Geología Mina Geoestadística',
-      email: 'contacto@geoperuviangroup.com',
+      email: 'Isaez@geoperuviangroup.com',
       image: fernandoImage,
       description: 'Magíster e Ingeniero Geólogo con más de 22 años de experiencia, CP/QP certificado por MAIG y catedrático en PUCP...',
       fullDescription: (
@@ -216,7 +216,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             </li>
           </ul>
           <p className="mb-4">
-            Ha ocupado posiciones estratégicas como Superintendente de Recursos Minerales en AngloAmerican Quellaveco , Consultor Principal en SRK Consulting y Geólogo Senior de Recursos en Yanacocha.
+            Ha ocupado posiciones estratégicas como Superintendente de Recursos Minerales en AngloAmerican Quellaveco, Consultor Principal en SRK Consulting y Geólogo Senior de Recursos en Yanacocha.
           </p>
         </>
       ),
@@ -224,9 +224,9 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
     {
       id: 'bill',
       name: 'Bill Maquin Valladares',
-      title: 'Consultor Principal, Operaciones Mina y Nuevas Tecnologías',
+      title: 'CONSULTOR PRINCIPAL EN LA CREACIÓN DE TECNOLOGÍAS MINERAS',
       specialty: 'Operaciones Mina y Tecnología Procesos Metalúrgicos',
-      email: 'contacto@geoperuviangroup.com',
+      email: 'bmaquin@geoperuviangroup.com',
       image: billImage,
       description: 'Ingeniero de Minas especialista en Big Data y Data Science, CEO y Fundador de CODEa UNI, plataforma líder en innovación minera...',
       fullDescription: (
@@ -245,7 +245,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[#C7482C] mt-1">•</span>
-              <span><strong>Desarrollo y Automatización:</strong> Creación de soluciones de software (web, escritorio y móvil) para la planificación y operaciones mineras , incluyendo la automatización de procesos en estimación de recursos.</span>
+              <span><strong>Desarrollo y Automatización:</strong> Creación de soluciones de software (web, escritorio y móvil) para la planificación y operaciones mineras, incluyendo la automatización de procesos en estimación de recursos.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[#C7482C] mt-1">•</span>
@@ -263,7 +263,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       name: 'Daniel Peña Guimas',
       title: 'Consultor Senior, Geología y Geometalurgia',
       specialty: 'Geometalurgia',
-      email: 'contacto@geoperuviangroup.com',
+      email: 'dpena@geoperuviangroup.com',
       image: danielImage,
       description: 'Ingeniero Geólogo con más de 17 años de experiencia, especializado en geometalurgia, modelamiento geológico y recursos minerales...',
       fullDescription: (
@@ -285,7 +285,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       name: 'Hector Andrade',
       title: 'Consultor Principal, Inteligencia Artificial',
       specialty: 'Inteligencia Artificial',
-      email: 'contacto@geoperuviangroup.com',
+      email: 'handrade@geoperuviangroup.com',
       image: hectorImage,
       description: 'Ingeniero de Sistemas (MBA Centrum Católica) con +14 años liderando transformación digital en sectores público y privado, experto en IA, automatización y arquitectura de datos...',
       fullDescription: (
@@ -433,7 +433,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               </motion.h1>
               
               <motion.p 
-                className="font-['Montserrat'] text-xl md:text-2xl text-white/90 mb-12 leading-relaxed"
+                className="font-['Montserrat'] text-xl md:text-lg text-white/90 mb-8 leading-relaxed"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -578,7 +578,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                     {member.title}
                   </p>
                   <p className="text-white/80 mb-4 text-sm leading-relaxed">
-                    {member.specialty}
+                    {/* {member.specialty} */}
                   </p>
                   
                   {member.description ? (

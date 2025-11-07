@@ -198,7 +198,7 @@ export function Contact() {
 
           {/* Right Form */}
           <motion.div 
-            className="bg-[#252525] border border-white/10 rounded-lg p-4 sm:p-6 md:p-8 w-full max-w-full box-border min-w-0"
+            className="bg-[#252525] border border-white/10 rounded-lg p-4 sm:p-8 md:p-8 w-full max-w-full box-border min-w-0"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}

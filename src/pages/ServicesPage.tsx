@@ -311,7 +311,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           title: 'Geología y Ore Control',
           services: [
             { name: 'Diseño e Implementación de Sistemas Ore Control', detail: 'Dilución, pérdidas, recuperación' },
-            { name: 'Caracterización Geológica de Blastholes y Frentes', detail: 'Litología, alteración, variables geometalurgicas' },
+            { name: 'Caracterización Geológica de Blastholes y Frentes', detail: 'Litología, alteración, variables geometalúrgicas' },
             { name: 'Mapeo Geológico de Alta Precisión', detail: 'Taludes, galerías, canales' },
           ]
         },
@@ -346,7 +346,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           number: '3.6',
           title: 'Diseño e Implementación de Geometalurgia Operacional',
           services: [
-            { name: 'Modelamiento Geometalúrgico Predictivo', detail: 'PCA, T-SNE, Dominios, UGM, variables geometalurgicas' },
+            { name: 'Modelamiento Geometalúrgico Predictivo', detail: 'PCA, T-SNE, Dominios, UGM, variables geometalúrgicas' },
             { name: 'Diseño de Campañas Geo-Metalúrgicas', detail: 'Sondajes, muestreo representativo, pruebas' },
             { name: 'Caracterización Mineralógica Avanzada', detail: 'Liberación, asociaciones minerales, ganga reactiva' },
           ]
@@ -596,7 +596,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               </motion.h1>
               
               <motion.p 
-                className="font-['Montserrat'] text-xl md:text-2xl text-white/90 mb-12 leading-relaxed"
+                className="font-['Montserrat'] text-xl md:text-lg text-white/90 mb-8 leading-relaxed"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}

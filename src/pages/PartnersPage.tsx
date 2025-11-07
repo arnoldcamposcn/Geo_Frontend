@@ -140,7 +140,7 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
               </motion.h1>
               
               <motion.p 
-                className="font-['Montserrat'] text-lg sm:text-xl md:text-2xl text-white/90 mb-12 leading-relaxed break-words"
+                className="font-['Montserrat'] text-lg sm:text-xl md:text-lg text-white/90 mb-8 leading-relaxed break-words"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}

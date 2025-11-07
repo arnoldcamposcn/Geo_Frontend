@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import imgImageGeoPeruvian from "../assets/geoperuvian.png";
+import imgImageGeoPeruvian from "../assets/geoperuvian-footer.png";
+
 
 interface HeaderProps {
   currentPage?: string;
@@ -11,12 +12,12 @@ export function Header({ currentPage = 'home', onNavigate }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { label: 'Inicio', page: 'home' },
-    { label: 'Nosotros', page: 'about' },
-    { label: 'Servicios', page: 'services' },
-    { label: 'Socios Aliados', page: 'partners' },
+    { label: 'Inicio', page: 'inicio' },
+    { label: 'Nosotros', page: 'nosotros' },
+    { label: 'Servicios', page: 'servicios' },
+    { label: 'Socios Aliados', page: 'socios-aliados' },
     { label: 'Blogs', page: 'blogs' },
-    { label: 'Contacto', page: 'contact' },
+    { label: 'Contacto', page: 'contacto' },
   ];
 
   const handleNavClick = (page: string) => {

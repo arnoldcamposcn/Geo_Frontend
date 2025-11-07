@@ -119,14 +119,16 @@ export function BlogsPage({ onNavigate }: BlogsPageProps) {
           </div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="max-w-4xl">
-            <h1 className="font-['Saira_Semi_Condensed'] text-5xl md:text-6xl text-white mb-6">
+        <div className="relative z-10 w-full py-32 mt-20 sm:mt-24 md:mt-28">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border">
+            <div className="max-w-4xl w-full">
+              <h1 className="font-['Saira_Semi_Condensed'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-8">
               Nuestro Blog
-            </h1>
-            <p className="text-xl text-white/90 max-w-2xl">
-              Descubre las últimas novedades, tendencias y conocimientos sobre minería e innovación tecnológica.
-            </p>
+              </h1>
+              <p className="font-['Montserrat'] text-lg sm:text-xl md:text-lg text-white/90 mb-8 leading-relaxed break-words max-w-2xl">
+                Descubre las últimas novedades, tendencias y conocimientos sobre minería e innovación tecnológica.
+              </p>
+            </div>
           </div>
         </div>
       </section>

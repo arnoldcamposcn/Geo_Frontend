@@ -61,17 +61,17 @@ export default function App() {
     }
 
     switch (currentPage) {
-      case "home":
+      case "inicio":
         return <HomePage onNavigate={handleNavigate} />;
-      case "about":
+      case "nosotros":
         return <AboutPage onNavigate={handleNavigate} />;
-      case "services":
+      case "servicios":
         return <ServicesPage onNavigate={handleNavigate} />;
-      case "partners":
+      case "socios-aliados":
         return <PartnersPage onNavigate={handleNavigate} />;
       case "blogs":
         return <BlogsPage onNavigate={handleNavigate} />;
-      case "contact":
+      case "contacto":
         return <ContactPage onNavigate={handleNavigate} />;
       case "login":
         return <LoginPage onNavigate={handleNavigate} />;

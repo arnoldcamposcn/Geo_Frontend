@@ -1,5 +1,5 @@
 import svgPaths from '../imports/svg-89342ybl2e';
-import logoImage from 'figma:asset/81236c71f496cbe1189a44f113b0135aef2618f4.png';
+import imgImageGeoPeruvian from "../assets/geoperuvian-footer.png";
 
 interface FooterProps {
   onNavigate?: (page: string) => void;
@@ -10,14 +10,14 @@ export function Footer({ onNavigate }: FooterProps) {
 
   const footerLinks = {
     navegacion: [
-      { label: 'Inicio', page: 'home' },
-      { label: 'Nosotros', page: 'about' },
-      { label: 'Servicios', page: 'services' },
-      { label: 'Socios Aliados', page: 'partners' },
+      { label: 'Inicio', page: 'inicio' },
+      { label: 'Nosotros', page: 'nosotros' },
+      { label: 'Servicios', page: 'servicios' },
+      { label: 'Socios Aliados', page: 'socios-aliados' },
     ],
     contacto: [
-      { label: 'Contacto', page: 'contact' },
-      { label: 'Soporte', page: 'contact' },
+      { label: 'Contacto', page: 'contacto' },
+      { label: 'Soporte', page: 'soporte' },
     ],
   };
 
@@ -40,7 +40,7 @@ export function Footer({ onNavigate }: FooterProps) {
               className="mb-4 cursor-pointer transition-transform hover:scale-105 inline-block"
             >
               <img 
-                src={logoImage} 
+                src={imgImageGeoPeruvian} 
                 alt="GeoPeruvian" 
                 className="h-12 sm:h-14 w-auto object-contain"
               />
