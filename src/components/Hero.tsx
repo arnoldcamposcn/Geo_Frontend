@@ -58,14 +58,14 @@ export function Hero({ onNavigate }: HeroProps = {}) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <span className="font-['Saira_Semi_Condensed']">
+              <span className="font-['Saira_Semi_Condensed'] text-base">
                 De los Datos al Valor del Yacimiento
               </span>
             </motion.div>
 
             {/* Main Title */}
             <motion.h1 
-              className="font-['Saira_Semi_Condensed'] text-3xl sm:text-4xl lg:text-6xl text-white mb-6 leading-tight drop-shadow-[0_15px_30px_rgba(0,0,0,0.45)] pt-4"
+              className="font-['Saira_Semi_Condensed'] text-4xl sm:text-4xl lg:text-6xl text-white mb-6 leading-tight drop-shadow-[0_15px_30px_rgba(0,0,0,0.45)] pt-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -75,7 +75,7 @@ export function Hero({ onNavigate }: HeroProps = {}) {
             
             {/* Subtitle */}
             <motion.p 
-              className="font-['Montserrat'] text-base sm:text-lg text-white/85 mb-8 leading-relaxed"
+              className="font-['Montserrat'] text-lg sm:text-lg text-white/85 mb-8 leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
