@@ -13,6 +13,7 @@ export function Footer({ onNavigate }: FooterProps) {
       { label: 'Inicio', page: 'inicio' },
       { label: 'Nosotros', page: 'nosotros' },
       { label: 'Servicios', page: 'servicios' },
+      { label: 'Blogs', page: 'blogs' },
       { label: 'Socios Aliados', page: 'socios-aliados' },
     ],
     contacto: [
@@ -54,7 +55,7 @@ export function Footer({ onNavigate }: FooterProps) {
               {/* LinkedIn */}
               <a
                 href="#"
-                className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-lg flex items-center justify-center transition-all group"
+                className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-full flex items-center justify-center transition-all group"
                 aria-label="LinkedIn"
               >
                 <svg className="w-[18px] h-[18px]" fill="none" viewBox="0 0 18 18">
@@ -93,7 +94,7 @@ export function Footer({ onNavigate }: FooterProps) {
               {/* Twitter/X */}
               <a
                 href="#"
-                className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-lg flex items-center justify-center transition-all group"
+                className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-full flex items-center justify-center transition-all group"
                 aria-label="Twitter"
               >
                 <svg className="w-[18px] h-[18px]" fill="none" viewBox="0 0 18 18">
@@ -114,7 +115,7 @@ export function Footer({ onNavigate }: FooterProps) {
               {/* Facebook */}
               <a
                 href="#"
-                className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-lg flex items-center justify-center transition-all group"
+                className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-full flex items-center justify-center transition-all group"
                 aria-label="Facebook"
               >
                 <svg className="w-[18px] h-[18px]" fill="none" viewBox="0 0 18 18">
@@ -135,7 +136,7 @@ export function Footer({ onNavigate }: FooterProps) {
               {/* Email */}
               <a
                 href="mailto:contacto@geoperuviangroup.com"
-                className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-lg flex items-center justify-center transition-all group"
+                className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-full flex items-center justify-center transition-all group"
                 aria-label="Email"
               >
                 <svg className="w-[18px] h-[18px]" fill="none" viewBox="0 0 18 18">
