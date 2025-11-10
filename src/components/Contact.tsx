@@ -147,7 +147,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-24 bg-[#1C1C1C] overflow-x-hidden w-full">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full box-border">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-12 w-full">
           {/* Left Content */}
           <motion.div
             initial="hidden"
@@ -159,7 +159,7 @@ export function Contact() {
             <h2 className="font-['Saira_Semi_Condensed'] text-4xl md:text-5xl text-white mb-6">
               Transformemos tus Operaciones Mineras
             </h2>
-            <p className="text-lg text-white/70 mb-8 break-words">
+            <p className="text-base text-white/70 mb-8 break-words">
               ¿Listo para aprovechar el poder de la IA y la analítica de datos? Nuestro equipo de expertos está aquí para ayudarte a desbloquear nuevo valor de tus datos geológicos.
             </p>
 
@@ -199,12 +199,20 @@ export function Contact() {
 
           {/* Right Form */}
           <motion.div 
-            className="bg-[#252525] border border-white/10 rounded-lg p-4 sm:p-8 md:p-8 w-full max-w-full box-border min-w-0"
+            className="bg-[#252525] border border-white/10 rounded-lg p-5 sm:p-8 md:p-8 "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={formVariants}
           >
+            <div className="mb-6">
+              <h3 className="font-['Saira_Semi_Condensed'] text-3xl text-white mb-2">
+                Agenda una consulta con nuestro equipo
+              </h3>
+              <p className="text-base text-white/70">
+                Comparte algunos detalles y te responderemos en menos de 24 horas para alinear la mejor solución para tu operación minera.
+              </p>
+            </div>
             <form onSubmit={handleSubmit} className="space-y-6 w-full">
               <div className="w-full min-w-0">
                 <Label htmlFor="name">Nombre Completo</Label>

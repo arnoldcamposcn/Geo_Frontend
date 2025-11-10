@@ -125,7 +125,7 @@ export function BlogsPage({ onNavigate }: BlogsPageProps) {
               <h1 className="font-['Saira_Semi_Condensed'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-8">
               Nuestro Blog
               </h1>
-              <p className="font-['Montserrat'] text-lg sm:text-xl md:text-lg text-white/90 mb-8 leading-relaxed break-words max-w-2xl">
+              <p className="font-['Syne'] text-base text-white/90 mb-8 leading-relaxed break-words max-w-2xl">
                 Descubre las últimas novedades, tendencias y conocimientos sobre minería e innovación tecnológica.
               </p>
             </div>
@@ -152,7 +152,7 @@ export function BlogsPage({ onNavigate }: BlogsPageProps) {
           {/* Información de resultados */}
           {!loading && pagination.count > 0 && (
             <div className="mb-6">
-              <p className="text-white/60 text-sm">
+              <p className="text-white/60 text-base">
                 Mostrando {blogs.length} de {pagination.count} blog{pagination.count !== 1 ? 's' : ''}
                 {debouncedSearch && ` para "${debouncedSearch}"`}
               </p>
@@ -170,8 +170,8 @@ export function BlogsPage({ onNavigate }: BlogsPageProps) {
             <div className="flex items-center justify-center min-h-[400px]">
               <div className="text-center">
                 <div className="text-[#C7482C] text-6xl mb-4">⚠️</div>
-                <p className="text-white text-xl mb-2">Error al cargar los blogs</p>
-                <p className="text-white/60">{error}</p>
+                <p className="text-base text-white mb-2">Error al cargar los blogs</p>
+                <p className="text-base text-white/60">{error}</p>
                 <button
                   onClick={() => fetchBlogs()}
                   className="mt-4 px-6 py-2 bg-[#C7482C] text-white rounded-md hover:bg-[#8B4114] transition-colors"
@@ -183,7 +183,7 @@ export function BlogsPage({ onNavigate }: BlogsPageProps) {
           ) : blogs.length === 0 ? (
             <div className="flex items-center justify-center min-h-[400px]">
               <div className="text-center">
-                <p className="text-white/70 text-xl mb-2">
+                <p className="text-base text-white/70 mb-2">
                   {debouncedSearch 
                     ? `No se encontraron blogs para "${debouncedSearch}"` 
                     : 'No hay blogs disponibles en este momento.'}
@@ -227,7 +227,7 @@ export function BlogsPage({ onNavigate }: BlogsPageProps) {
                   </Button>
                   
                   <div className="flex items-center gap-2">
-                    <span className="text-white/60 text-sm">
+                    <span className="text-white/60 text-base">
                       Página {currentPage} de {totalPages}
                     </span>
                   </div>

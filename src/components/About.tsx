@@ -64,10 +64,10 @@ export function About({ onNavigate }: AboutProps = {}) {
           <h2 className="text-4xl md:text-5xl text-white mb-6 font-[Saira_SemiCondensed]">
             Transformamos Datos en Valor Estratégico
           </h2>
-          <p className="text-lg text-white/80 mb-4">
+          <p className="text-base text-white/80 mb-4">
             En <span className="text-[#C7482C]">GEOPERUVIAN</span> transformamos datos geológicos y operativos en valor estratégico. ¿Cómo? 
           </p>
-          <p className="text-lg text-white/70">
+          <p className="text-base text-white/70">
             Integramos la <span className="text-white/90">Estimación de Recursos</span> con la <span className="text-white/90">Optimización Geo-Minero-Metalúrgica</span>, potenciada por IA, para cuantificar y maximizar el valor de su yacimiento desde la exploración hasta la operación, asegurando la mejor toma de decisiones.
           </p>
         </motion.div>

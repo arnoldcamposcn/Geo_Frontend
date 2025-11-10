@@ -2,7 +2,7 @@
 import { Button } from './ui/button';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
-import heroImage from 'figma:asset/c4a371629a793ebac9126a95f52d9f05591f75a9.png';
+import heroImage from '../assets/transforms.jpg';
 
 interface HeroProps {
   onNavigate?: (page: string) => void;
@@ -19,7 +19,7 @@ export function Hero({ onNavigate }: HeroProps = {}) {
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.8, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center overflow-hidden">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax */}
       <motion.div 
         className="absolute inset-0 z-0"
@@ -46,26 +46,27 @@ export function Hero({ onNavigate }: HeroProps = {}) {
 
       {/* Content */}
       <motion.div 
-        className="relative z-10 w-full py-28 sm:py-32 lg:py-36 mt-6 sm:mt-10 md:mt-14"
+        className="relative z-10 w-full pt-16 pb-20 sm:pt-20 sm:pb-24 lg:pt-24 lg:pb-28"
         style={{ opacity }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl lg:max-w-5xl text-left">
+          <div className="max-w-3xl lg:max-w-5xl mx-auto text-center flex flex-col items-center">
             {/* Slogan */}
-            <motion.div
-              className="inline-flex items-center text-sm sm:text-base text-white tracking-[0.22em] uppercase border-2 border-white/80 px-6 py-3 rounded-full"
+            {/* <motion.div
+              className="inline-flex items-center justify-center text-sm sm:text-base text-white tracking-[0.22em] border-2 border-white/80 px-4 py-2 rounded-full mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <span className="font-['Saira_Semi_Condensed'] text-base">
-                De los Datos al Valor del Yacimiento
-              </span>
-            </motion.div>
+             <span className="font-['Saira_Semi_Condensed'] text-base capitalize">
+              De los Datos al Valor del Yacimiento
+            </span>
+
+            </motion.div> */}
 
             {/* Main Title */}
             <motion.h1 
-              className="font-['Saira_Semi_Condensed'] text-4xl sm:text-4xl lg:text-6xl text-white mb-6 leading-tight drop-shadow-[0_15px_30px_rgba(0,0,0,0.45)] pt-4"
+              className="font-['Saira_Semi_Condensed'] text-4xl sm:text-4xl lg:text-6xl text-white mb-6 leading-tight tracking-[-0.03em] drop-shadow-[0_15px_30px_rgba(0,0,0,0.45)] pt-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -75,7 +76,7 @@ export function Hero({ onNavigate }: HeroProps = {}) {
             
             {/* Subtitle */}
             <motion.p 
-              className="font-['Montserrat'] text-lg sm:text-lg text-white/85 mb-8 leading-relaxed"
+              className="font-['Syne'] text-base text-white/85 mb-8 leading-relaxed max-w-2xl"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -85,19 +86,20 @@ export function Hero({ onNavigate }: HeroProps = {}) {
 
             {/* CTA Button */}
             <motion.div
+              className="flex justify-center w-full"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <Button 
                 size="lg" 
-                className="group bg-[#C7482C] hover:bg-[#b24326] border border-[#ffffff33] text-base sm:text-lg px-7 sm:px-8 py-4 sm:py-5 rounded font-normal tracking-wide shadow-[0_18px_35px_rgba(199,72,44,0.35)]"
+                className="group bg-[#C7482C] hover:bg-[#b24326] border border-[#ffffff33] text-base sm:text-lg px-7 sm:px-8 py-4 sm:py-8 rounded-full font-normal tracking-wide shadow-[0_18px_35px_rgba(199,72,44,0.35)] mx-auto"
                 onClick={() => onNavigate && onNavigate('servicios')}
               >
                 Explora nuestras soluciones
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Button>
-            </motion.div>
+            </motion.div> 
           </div>
         </div>
       </motion.div>

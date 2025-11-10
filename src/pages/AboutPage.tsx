@@ -433,7 +433,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               </motion.h1>
               
               <motion.p 
-                className="font-['Montserrat'] text-xl md:text-lg text-white/90 mb-8 leading-relaxed"
+                className="font-['Syne'] text-base text-white/90 mb-8 leading-relaxed"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -486,10 +486,10 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-lg text-white/80 mb-8 break-words">
+            <p className="text-base text-white/80 mb-8 break-words">
               Deseamos comprender profundamente las fortalezas, desafíos y restricciones de nuestros clientes para diseñar estrategias de mejora e innovación que sean efectivas y al servicio de sus metas.
             </p>
-            <p className="text-xl text-white break-words">
+            <p className="text-base text-white break-words">
               En <span className="text-[#C7482C]">GEOPERUVIAN</span> vamos más allá de la consultoría tradicional.{' '}
               <span className="text-white">Somos socios tecnológicos para la minería moderna, combinando:</span>
             </p>
@@ -530,7 +530,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-5xl text-white mb-4 font-[Saira_SemiCondensed]">Nuestro Equipo</h2>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+            <p className="text-base text-white/70 max-w-2xl mx-auto">
               Consultores principales con décadas de experiencia<br />
               en operaciones mineras de clase mundial
             </p>
@@ -712,7 +712,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-5xl text-white mb-6 font-[Saira_SemiCondensed]">Lo Que Ofrecemos</h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto break-words">
+            <p className="text-base text-white/80 max-w-3xl mx-auto break-words">
               Soluciones con Impacto Real en Minería, transformamos sus desafíos en resultados cuantificables mediante:
             </p>
           </motion.div>
@@ -800,7 +800,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl text-white mb-6 font-[Saira_SemiCondensed]">Brochure</h2>
-          <p className="text-xl text-white/95 mb-8 max-w-3xl mx-auto break-words">
+          <p className="text-base text-white/95 mb-8 max-w-3xl mx-auto break-words">
             Conoce nuestras soluciones especializadas para el sector minero. Descarga nuestro brochure de servicios y descubre cómo podemos optimizar tus operaciones con tecnología de punta y asesoría experta.
           </p>
           <Button
@@ -811,7 +811,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             <Download className="mr-2" size={20} />
             Descargar Brochure
           </Button>
-          <p className="text-white/80 mt-4">
+          <p className="text-base text-white/80 mt-4">
             ¡Haz clic aquí y lleva tu proyecto al siguiente nivel!
           </p>
         </motion.div>
@@ -829,7 +829,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           <h2 className="text-3xl md:text-4xl text-white mb-6 font-[Saira_SemiCondensed]">
             ¿Listo para Transformar tus Operaciones Mineras?
           </h2>
-          <p className="text-lg text-white/70 mb-8 max-w-2xl mx-auto break-words">
+          <p className="text-base text-white/70 mb-8 max-w-2xl mx-auto break-words">
             Descubre cómo nuestro enfoque orientado a resultados puede ayudarte a alcanzar tus objetivos de eficiencia, sostenibilidad y rentabilidad.
           </p>
           <Button

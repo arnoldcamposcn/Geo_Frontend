@@ -596,7 +596,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               </motion.h1>
               
               <motion.p 
-                className="font-['Montserrat'] text-xl md:text-lg text-white/90 mb-8 leading-relaxed"
+                className="font-['Syne'] text-base text-white/90 mb-8 leading-relaxed"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -638,7 +638,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
             <h2 className="font-['Saira_Semi_Condensed'] text-4xl md:text-5xl text-white mb-6">
               Soluciones Especializadas Potenciadas por IA
             </h2>
-            <p className="text-lg text-white/70 leading-relaxed">
+            <p className="text-base text-white/70 leading-relaxed">
               5 líneas de servicio integradas que cubren todo el ciclo de vida de proyectos mineros, combinando estimación de recursos con optimización geo-minero-metalúrgica potenciada por IA para maximizar el valor de su yacimiento.
             </p>
           </motion.div>
@@ -689,7 +689,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                           <h3 className="font-['Saira_Semi_Condensed'] text-3xl md:text-4xl text-white mb-3">
                             {service.title}
                           </h3>
-                          <p className="text-lg text-white/60 mb-4">
+                          <p className="text-base text-white/60 mb-4">
                             {service.subtitle}
                           </p>
                           <p className="text-base text-white/70 leading-relaxed">
@@ -835,7 +835,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
             <h3 className="font-['Saira_Semi_Condensed'] text-3xl md:text-4xl text-white mb-6">
               ¿Listo para transformar tus datos en valor estratégico?
             </h3>
-            <p className="text-lg text-white/70 mb-8 max-w-3xl mx-auto">
+            <p className="text-base text-white/70 mb-8 max-w-3xl mx-auto">
               Nuestro equipo multidisciplinario está listo para diseñar una solución personalizada que se adapte a los desafíos específicos de tu proyecto minero.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

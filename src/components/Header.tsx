@@ -54,7 +54,7 @@ export function Header({ currentPage = 'home', onNavigate }: HeaderProps) {
               <button
                 key={item.label}
                 onClick={() => handleNavClick(item.page)}
-                className={`font-['Montserrat',_sans-serif] leading-[24px] text-[16px] text-nowrap transition-all hover:scale-105 ${
+                className={`font-['Syne',_sans-serif] cursor-pointer leading-[24px] text-[16px] text-nowrap transition-all hover:scale-105 ${
                   currentPage === item.page
                     ? 'text-[#c7482c]'
                     : 'text-[rgba(255,255,255,0.8)] hover:text-white'
@@ -67,9 +67,9 @@ export function Header({ currentPage = 'home', onNavigate }: HeaderProps) {
             {/* CTA Button */}
             <button 
               onClick={() => window.open('https://api.whatsapp.com/send/?phone=51943049976&text=Buenos+dias+Geoperuvian+Group%0D%0ADeseo+mas+informaci%C3%B3n&type=phone_number&app_absent=0', '_blank')}
-              className="bg-[#c7482c] h-[36px] px-[16px] py-[8px] rounded-[6px] transition-all hover:bg-[#8B4114] hover:scale-105 active:scale-95"
+              className="bg-[#c7482c] h-[36px] px-[16px] py-[8px] rounded-full transition-all hover:bg-[#8B4114] hover:scale-105 active:scale-95"
             >
-              <p className="font-['Montserrat',_sans-serif] font-medium leading-[20px] text-[14px] text-nowrap text-white whitespace-pre">
+              <p className="font-['Syne',_sans-serif] cursor-pointer font-medium leading-[20px] text-[14px] text-nowrap text-white whitespace-pre">
                 Contactar ahora
               </p>
             </button>
@@ -93,7 +93,7 @@ export function Header({ currentPage = 'home', onNavigate }: HeaderProps) {
                 <button
                   key={item.label}
                   onClick={() => handleNavClick(item.page)}
-                  className={`text-left py-2 font-['Montserrat',_sans-serif] text-[16px] transition-colors ${
+                  className={`text-left py-2 font-['Syne',_sans-serif] cursor-pointer text-[16px] transition-colors ${
                     currentPage === item.page
                       ? 'text-[#c7482c]'
                       : 'text-[rgba(255,255,255,0.8)] hover:text-white'
@@ -106,7 +106,7 @@ export function Header({ currentPage = 'home', onNavigate }: HeaderProps) {
                 onClick={() => window.open('https://api.whatsapp.com/send/?phone=51943049976&text=Buenos+dias+Geoperuvian+Group%0D%0ADeseo+mas+informaci%C3%B3n&type=phone_number&app_absent=0', '_blank')}
                 className="bg-[#c7482c] h-[36px] px-[16px] py-[8px] rounded-[6px] w-full transition-all hover:bg-[#8B4114] active:scale-95"
               >
-                <p className="font-['Montserrat',_sans-serif] font-medium leading-[20px] text-[14px] text-white">
+                <p className="font-['Syne',_sans-serif] cursor-pointer font-medium leading-[20px] text-[14px] text-white">
                   Contactar ahora
                 </p>
               </button>

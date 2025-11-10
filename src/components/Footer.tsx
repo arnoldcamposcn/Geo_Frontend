@@ -33,7 +33,7 @@ export function Footer({ onNavigate }: FooterProps) {
     <footer className="bg-[#0D0D0D] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-8 mb-8">
+        <div className="grid grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-8 mb-8 mt-4">
           {/* Brand Column - Full width on mobile (col-span-2), takes specific space on desktop */}
           <div className="col-span-2 lg:col-span-5 flex flex-col items-center lg:items-start">
             <button 

@@ -219,7 +219,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
               </motion.h1>
               
               <motion.p 
-                className="font-['Montserrat'] text-xl md:text-lg text-white/90 mb-8 leading-relaxed"
+                className="font-['Syne'] text-base text-white/90 mb-8 leading-relaxed"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -281,7 +281,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
             >
               <div className="mb-8">
                 <h2 className="font-['Saira_Semi_Condensed'] text-3xl text-white mb-4">Envíanos un Mensaje</h2>
-                <p className="text-white/70">
+                <p className="text-base text-white/70">
                   Nuestro equipo de expertos está listo para discutir cómo podemos ayudar a optimizar tus operaciones mineras. Completa el formulario y te responderemos en 24 horas.
                 </p>
               </div>
@@ -427,7 +427,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                   )}
                 </Button>
 
-                <p className="text-sm text-white/50">
+                <p className="text-base text-white/50">
                   Al enviar este formulario, aceptas nuestra política de privacidad y términos de servicio.
                 </p>
               </form>
@@ -435,7 +435,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
               {/* Google Maps Location */}
               <div className="mt-12 w-full">
                 <h3 className="font-['Saira_Semi_Condensed'] text-2xl text-white mb-4">Nuestra Ubicación</h3>
-                <p className="text-white/70 mb-6">
+                <p className="text-base text-white/70 mb-6">
                   Encuéntranos en Santiago de Surco, Lima, Perú
                 </p>
                 <div className="rounded-lg overflow-hidden border border-white/10 w-full max-w-full">
@@ -463,7 +463,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
             >
               <div className="mb-8">
                 <h2 className="font-['Saira_Semi_Condensed'] text-3xl text-white mb-4">Ponte en Contacto</h2>
-                <p className="text-white/70">
+                <p className="text-base text-white/70">
                   Elige la forma que mejor te funcione para conectar con nuestro equipo.
                 </p>
               </div>
@@ -476,11 +476,11 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                     </div>
                     <div className="min-w-0 flex-1">
                       <h3 className="text-white mb-2">Email</h3>
-                      <p className="text-white/70 mb-1">Consultas generales:</p>
+                      <p className="text-base text-white/70 mb-1">Consultas generales:</p>
                       <a href="mailto:contacto.peru@geoperuviangroup.com" className="text-[#C7482C] hover:underline break-all">
                         contacto.peru@geoperuviangroup.com
                       </a>
-                      <p className="text-white/70 mt-3 mb-1">Soporte técnico:</p>
+                      <p className="text-base text-white/70 mt-3 mb-1">Soporte técnico:</p>
                       <a href="mailto:soporte@geoperuviangroup.com" className="text-[#C7482C] hover:underline break-all">
                         soporte@geoperuviangroup.com
                       </a>
@@ -495,11 +495,11 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                     </div>
                     <div className="min-w-0 flex-1">
                       <h3 className="text-white mb-2">Teléfono</h3>
-                      <p className="text-white/70 mb-1">Oficina Perú:</p>
+                      <p className="text-base text-white/70 mb-1">Oficina Perú:</p>
                       <a href="tel:+51014891892" className="text-[#C7482C] hover:underline">
                         (+51-01) 4891892
                       </a>
-                      <p className="text-white/70 mt-3 mb-1">Móvil:</p>
+                      <p className="text-base text-white/70 mt-3 mb-1">Móvil:</p>
                       <a href="tel:+51943049976" className="text-[#C7482C] hover:underline">
                         (+51) 943049976
                       </a>
@@ -514,7 +514,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                     </div>
                     <div className="min-w-0 flex-1">
                       <h3 className="text-white mb-2">Oficina</h3>
-                      <p className="text-white/70">
+                      <p className="text-base text-white/70">
                         Santiago de Surco<br />
                         Lima<br />
                         Perú
@@ -530,7 +530,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                     </div>
                     <div className="min-w-0 flex-1">
                       <h3 className="text-white mb-2">Horario de Atención</h3>
-                      <p className="text-white/70">
+                      <p className="text-base text-white/70">
                         Lunes - Viernes: 8:00 AM - 6:00 PM (PET)<br />
                         Sábado: 9:00 AM - 1:00 PM (PET)<br />
                         Domingo: Cerrado
@@ -546,7 +546,7 @@ export function ContactPage({ onNavigate }: ContactPageProps = {}) {
                     </div>
                     <div className="min-w-0 flex-1">
                       <h3 className="text-white mb-2">Presencia Global</h3>
-                      <p className="text-white/70">
+                      <p className="text-base text-white/70">
                         Operando en 3 países de Latinoamérica con expertise local y estándares globales.
                       </p>
                     </div>

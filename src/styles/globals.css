@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@400;500;600;700;800&family=Syne:wght@300;400;500;600;700;800&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
   --font-size: 16px;
-  --font-heading: 'Saira Semi Condensed', sans-serif;
-  --font-body: 'Montserrat', sans-serif;
+  --font-heading: 'Syne', sans-serif;
+  --font-body: 'Syne', sans-serif;
+  --font-accent: 'Saira Semi Condensed', sans-serif;
   
   /* GeoPeruvian Brand Colors */
   --brand-primary: #C7482C;
@@ -148,7 +149,7 @@
 
     p {
       font-family: var(--font-body);
-      font-size: var(--text-base);
+      font-size: var(--text-base) !important;
       font-weight: 400;
       line-height: 1.7;
     }
@@ -173,6 +174,12 @@
       font-weight: 400;
       line-height: 1.5;
     }
+  }
+}
+
+@layer utilities {
+  .font-saira {
+    font-family: var(--font-accent);
   }
 }
 
