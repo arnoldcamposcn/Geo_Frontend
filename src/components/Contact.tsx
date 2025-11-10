@@ -166,7 +166,8 @@ export function Contact() {
             <div className="space-y-6">
               {[
                 { icon: Mail, title: 'Email', content: 'contacto.peru@geoperuviangroup.com' },
-                { icon: Phone, title: 'Teléfono', content: '(+51-01) 4891892' },
+                { icon: Phone, title: 'Oficina Perú', content: '(+51-01) 4891892' },
+                { icon: Phone, title: 'Movil Perú', content: '(+51) 988818181' },
                 { icon: MapPin, title: 'Oficina', content: 'Santiago de Surco\nLima, Perú' }
               ].map((item, index) => {
                 const Icon = item.icon;

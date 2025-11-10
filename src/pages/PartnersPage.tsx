@@ -118,7 +118,7 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
               }}
             />
             {/* Primary color overlay */}
-            <div className="absolute inset-0 bg-[#C7482C]/60"></div>
+            <div className="absolute inset-0 bg-[#C7482C]/50"></div>
             {/* Bottom gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
           </div>
@@ -156,7 +156,7 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
                 <Button 
                   size="lg" 
                   className="group"
-                  onClick={() => onNavigate && onNavigate('contact')}
+                  onClick={() => onNavigate && onNavigate('contacto')}
                 >
                   Únete a nuestra red
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -384,7 +384,7 @@ export function PartnersPage({ onNavigate }: PartnersPageProps = {}) {
             Estamos abiertos a nuevas alianzas estratégicas que fortalezcan nuestra red y amplíen nuestras capacidades.
           </p>
           <Button size="lg" className="group" asChild>
-            <a href="#contact">
+            <a href="/contacto">
               Contáctanos
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </a>

@@ -1,4 +1,4 @@
-import { 
+﻿import { 
   Compass,
   Settings,
   Cpu,
@@ -574,7 +574,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               }}
             />
             {/* Primary color overlay */}
-            <div className="absolute inset-0 bg-[#C7482C]/60"></div>
+            <div className="absolute inset-0 bg-[#C7482C]/50"></div>
             {/* Bottom gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
           </div>
@@ -612,7 +612,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               >
                 <Button 
                   size="lg" 
-                  onClick={() => onNavigate && onNavigate('contact')}
+                  onClick={() => onNavigate && onNavigate('contacto')}
                   className="group"
                 >
                   Solicita una Consulta
@@ -841,7 +841,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                onClick={() => onNavigate && onNavigate('contact')}
+                onClick={() => onNavigate && onNavigate('contacto')}
                 className="group"
               >
                 Contacta con nuestro equipo
@@ -850,7 +850,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               <Button 
                 size="lg" 
                 variant="outline"
-                onClick={() => onNavigate && onNavigate('home')}
+                onClick={() => onNavigate && onNavigate('inicio')}
               >
                 Volver al inicio
               </Button>

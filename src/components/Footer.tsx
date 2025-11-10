@@ -37,7 +37,7 @@ export function Footer({ onNavigate }: FooterProps) {
           {/* Brand Column - Full width on mobile (col-span-2), takes specific space on desktop */}
           <div className="col-span-2 lg:col-span-5 flex flex-col items-center lg:items-start">
             <button 
-              onClick={() => handleNavClick('home')}
+              onClick={() => handleNavClick('inicio')}
               className="mb-4 cursor-pointer transition-transform hover:scale-105 inline-block"
             >
               <img 
@@ -54,12 +54,12 @@ export function Footer({ onNavigate }: FooterProps) {
             <div className="flex gap-4 justify-center lg:justify-start w-full">
               {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/company/geoperuvian" target="_blank"
                 className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-full flex items-center justify-center transition-all group"
                 aria-label="LinkedIn"
               >
                 <svg className="w-[18px] h-[18px]" fill="none" viewBox="0 0 18 18">
-                  <g>
+                  <g >
                     <path 
                       d={svgPaths.p204bd7c0} 
                       stroke="white" 
@@ -91,51 +91,11 @@ export function Footer({ onNavigate }: FooterProps) {
                 </svg>
               </a>
 
-              {/* Twitter/X */}
-              <a
-                href="#"
-                className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-full flex items-center justify-center transition-all group"
-                aria-label="Twitter"
-              >
-                <svg className="w-[18px] h-[18px]" fill="none" viewBox="0 0 18 18">
-                  <g>
-                    <path 
-                      d={svgPaths.pba1780} 
-                      stroke="white" 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeOpacity="0.7" 
-                      strokeWidth="1.5"
-                      className="group-hover:stroke-white transition-all"
-                    />
-                  </g>
-                </svg>
-              </a>
-
-              {/* Facebook */}
-              <a
-                href="#"
-                className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-full flex items-center justify-center transition-all group"
-                aria-label="Facebook"
-              >
-                <svg className="w-[18px] h-[18px]" fill="none" viewBox="0 0 18 18">
-                  <g>
-                    <path 
-                      d={svgPaths.p3c358280} 
-                      stroke="white" 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeOpacity="0.7" 
-                      strokeWidth="1.5"
-                      className="group-hover:stroke-white transition-all"
-                    />
-                  </g>
-                </svg>
-              </a>
 
               {/* Email */}
               <a
                 href="mailto:contacto@geoperuviangroup.com"
+                target="_blank"
                 className="w-10 h-10 bg-white/5 hover:bg-[#C7482C]/20 border border-white/10 rounded-full flex items-center justify-center transition-all group"
                 aria-label="Email"
               >

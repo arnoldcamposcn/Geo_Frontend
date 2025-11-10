@@ -41,7 +41,7 @@ export function Partners({ onNavigate }: PartnersProps = {}) {
           <Button 
             variant="outline" 
             className="group"
-            onClick={() => onNavigate && onNavigate('partners')}
+            onClick={() => onNavigate && onNavigate('socios-aliados')}
           >
             Ver todos los socios
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />

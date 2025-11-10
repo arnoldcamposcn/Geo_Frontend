@@ -112,7 +112,7 @@ export function About({ onNavigate }: AboutProps = {}) {
           <Button 
             variant="outline" 
             className="group"
-            onClick={() => onNavigate && onNavigate('about')}
+            onClick={() => onNavigate && onNavigate('nosotros')}
           >
             Conoce más sobre nosotros
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />

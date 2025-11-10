@@ -520,7 +520,7 @@ export function DesignSystemPage() {
                       alt="Hero background"
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-[#C7482C]/65"></div>
+                    <div className="absolute inset-0 bg-[#C7482C]/50"></div>
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
                   </div>
                 </div>

@@ -224,7 +224,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
     {
       id: 'bill',
       name: 'Bill Maquin Valladares',
-      title: 'CONSULTOR PRINCIPAL EN LA CREACIÓN DE TECNOLOGÍAS MINERAS',
+      title: 'CONSULTOR PRINCIPAL, OPERACIONES MINA Y NUEVAS TECNOLOGIAS',
       specialty: 'Operaciones Mina y Tecnología Procesos Metalúrgicos',
       email: 'bmaquin@geoperuviangroup.com',
       image: billImage,
@@ -411,7 +411,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               }}
             />
             {/* Primary color overlay */}
-            <div className="absolute inset-0 bg-[#C7482C]/60"></div>
+            <div className="absolute inset-0 bg-[#C7482C]/50"></div>
             {/* Bottom gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
           </div>
@@ -449,7 +449,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                 <Button 
                   size="lg" 
                   className="group"
-                  onClick={() => onNavigate && onNavigate('services')}
+                  onClick={() => onNavigate && onNavigate('servicios')}
                 >
                   Conoce nuestros servicios
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -835,7 +835,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           <Button
             size="lg"
             className="group"
-            onClick={() => onNavigate && onNavigate('contact')}
+            onClick={() => onNavigate && onNavigate('contacto')}
           >
             Comenzar Ahora
             <CheckCircle className="ml-2 group-hover:scale-110 transition-transform" size={20} />

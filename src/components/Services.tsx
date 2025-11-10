@@ -106,7 +106,7 @@ export function Services({ onNavigate }: ServicesProps) {
                 key={index}
                 variants={itemVariants}
                 className="group bg-[#252525] border border-white/10 rounded-xl p-8 hover:border-[#C7482C] transition-all cursor-pointer relative overflow-hidden"
-                onClick={() => onNavigate('services')}
+                onClick={() => onNavigate('servicios')}
                 whileHover={{ y: -8, transition: { duration: 0.2 } }}
               >
                 {/* Number Background */}
@@ -136,7 +136,7 @@ export function Services({ onNavigate }: ServicesProps) {
                   <h3 className="text-xl text-white mb-3 min-h-[3.5rem]">{service.title}</h3>
                   <p className="text-white/70 mb-6 text-sm">{service.description}</p>
                   
-                  <button className="text-[#C7482C] hover:text-[#C7482C]/80 flex items-center gap-2 group/btn text-sm">
+                  <button onClick={() => onNavigate('servicios')} className="text-[#C7482C] hover:text-[#C7482C]/80 flex items-center gap-2 group/btn text-sm">
                     Ver detalles
                     <ArrowRight className="group-hover/btn:translate-x-1 transition-transform" size={16} />
                   </button>
@@ -162,8 +162,7 @@ export function Services({ onNavigate }: ServicesProps) {
           </p>
           <Button 
             size="lg" 
-            onClick={() => onNavigate('services')}
-            className="group"
+            onClick={() => onNavigate('servicios')}
           >
             Explora todos los servicios
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />

@@ -66,7 +66,7 @@ export function Header({ currentPage = 'home', onNavigate }: HeaderProps) {
             
             {/* CTA Button */}
             <button 
-              onClick={() => handleNavClick('contact')}
+              onClick={() => window.open('https://api.whatsapp.com/send/?phone=51943049976&text=Buenos+dias+Geoperuvian+Group%0D%0ADeseo+mas+informaci%C3%B3n&type=phone_number&app_absent=0', '_blank')}
               className="bg-[#c7482c] h-[36px] px-[16px] py-[8px] rounded-[6px] transition-all hover:bg-[#8B4114] hover:scale-105 active:scale-95"
             >
               <p className="font-['Montserrat',_sans-serif] font-medium leading-[20px] text-[14px] text-nowrap text-white whitespace-pre">
@@ -103,7 +103,7 @@ export function Header({ currentPage = 'home', onNavigate }: HeaderProps) {
                 </button>
               ))}
               <button 
-                onClick={() => handleNavClick('contact')}
+                onClick={() => window.open('https://api.whatsapp.com/send/?phone=51943049976&text=Buenos+dias+Geoperuvian+Group%0D%0ADeseo+mas+informaci%C3%B3n&type=phone_number&app_absent=0', '_blank')}
                 className="bg-[#c7482c] h-[36px] px-[16px] py-[8px] rounded-[6px] w-full transition-all hover:bg-[#8B4114] active:scale-95"
               >
                 <p className="font-['Montserrat',_sans-serif] font-medium leading-[20px] text-[14px] text-white">

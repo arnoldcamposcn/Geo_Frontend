@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+﻿import { ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
@@ -36,7 +36,7 @@ export function Hero({ onNavigate }: HeroProps = {}) {
             }}
           />
           {/* Primary color overlay */}
-          <div className="absolute inset-0 bg-[#C7482C]/60"></div>
+          <div className="absolute inset-0 bg-[#C7482C]/50"></div>
           {/* Top gradient overlay for header transition */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#0B0B0B] via-[#1C1C1C]/85 to-transparent"></div>
           {/* Bottom gradient */}
@@ -92,7 +92,7 @@ export function Hero({ onNavigate }: HeroProps = {}) {
               <Button 
                 size="lg" 
                 className="group bg-[#C7482C] hover:bg-[#b24326] border border-[#ffffff33] text-base sm:text-lg px-7 sm:px-8 py-4 sm:py-5 rounded font-normal tracking-wide shadow-[0_18px_35px_rgba(199,72,44,0.35)]"
-                onClick={() => onNavigate && onNavigate('services')}
+                onClick={() => onNavigate && onNavigate('servicios')}
               >
                 Explora nuestras soluciones
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />

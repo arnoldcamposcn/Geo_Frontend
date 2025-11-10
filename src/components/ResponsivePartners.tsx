@@ -150,29 +150,12 @@ function PartnerCard({
           </div>
           <a
             href={`mailto:${email}`}
-            className="font-['Montserrat'] text-xs text-[rgba(255,255,255,0.7)] leading-5 hover:text-[#C7482C] transition-colors break-all"
+            className="font-['Montserrat'] text-sm text-[rgba(255,255,255,0.7)] leading-5 hover:text-[#C7482C] transition-colors break-all"
           >
             {email}
           </a>
         </div>
-
-        {/* Contact Button */}
-        <motion.button
-          onClick={handleContactClick}
-          className="bg-[#1c1c1c] border border-[rgba(255,255,255,0.1)] rounded-[6px] h-9 flex items-center justify-center gap-2 text-white hover:bg-[#C7482C]/10 hover:border-[#C7482C] transition-all group mt-auto"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          <span className="font-['Montserrat'] text-sm leading-5 font-medium">
-            Contactar
-          </span>
-          <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 16 16">
-            <g>
-              <path d="M3.33333 8H12.6667" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33333" />
-              <path d={svgPaths.p1d405500} stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33333" />
-            </g>
-          </svg>
-        </motion.button>
+       
       </div>
     </motion.div>
   );
